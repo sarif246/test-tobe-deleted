@@ -23,6 +23,6 @@ resource "google_compute_instance" "default" {
     }
   }
 }
-varibale "project" {
+variable "project" {
 type = string
 }
