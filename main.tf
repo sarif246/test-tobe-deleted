@@ -2,7 +2,7 @@ resource "google_compute_instance" "default" {
   name         = "test123"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
-
+  project      = var.project 
   tags = ["foo", "bar"]
 
   boot_disk {
@@ -22,4 +22,7 @@ resource "google_compute_instance" "default" {
       // Ephemeral public IP
     }
   }
+}
+varibale "project" {
+type = string
 }
